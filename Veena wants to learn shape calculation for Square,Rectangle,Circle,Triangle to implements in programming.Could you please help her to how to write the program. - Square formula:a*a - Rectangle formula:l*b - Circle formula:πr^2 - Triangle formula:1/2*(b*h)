@@ -1,0 +1,82 @@
+Veena wants to learn shape calculation for Square,Rectangle,Circle,Triangle to implements in programming.Could you please help her to how to write the program. - Square formula:a*a - Rectangle formula:l*b - Circle formula:πr^2 - Triangle formula:1/2*(b*h)
+
+Input Format
+
+First input consist of integer for side.
+Second and third input consists of integer for Length and breadth.
+forth input consist of radius.
+Fifth and Sixth input consist of Base and height.
+Constraints
+
+No Constraints
+
+Output Format
+
+Execute the area of shape calculation values.
+Sample Input 0
+
+2
+3
+2
+3
+6
+5
+Sample Output 0
+
+Area of Square=4
+Area of Rectangle=6
+Area of Circle=28.27
+Area of Triangle=15
+Sample Input 1
+
+2
+3
+4
+5
+6
+7
+Sample Output 1
+
+Area of Square=4
+Area of Rectangle=12
+Area of Circle=78.53
+Area of Triangle=21
+Contest ends in a month
+Submissions: 118
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       
+       int s = sc.nextInt();   
+       int l = sc.nextInt();   
+       int b = sc.nextInt();   
+       int r = sc.nextInt();   
+       int b1 = sc.nextInt();  
+       int h = sc.nextInt();   
+       int areaSquare = s * s;
+       int areaRectangle = l * b;
+       double areaCircle = Math.PI * r * r;
+
+       
+       areaCircle = Math.floor(areaCircle * 100) / 100;
+
+       int areaTriangle = (b1 * h) / 2;
+
+       System.out.printf("Area of Square=%d\n", areaSquare);
+       System.out.printf("Area of Rectangle=%d\n", areaRectangle);
+       System.out.printf("Area of Circle=%.2f\n", areaCircle);
+       System.out.printf("Area of Triangle=%d\n", areaTriangle);
+       
+       sc.close();
+    }
+}
+
+ 
